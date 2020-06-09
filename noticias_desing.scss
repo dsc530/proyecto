@@ -1,0 +1,50 @@
+$fondo:rgb(49, 102, 146);
+$letra:'Courier New', Courier, monospace;
+$color:white;
+
+%letras{
+    background-color: $fondo;
+    font-family: $letra;
+    color: $color;
+    }
+
+    @media print{
+        table{
+            display: none;
+        }
+    }
+
+table{
+    text-align: center;
+    width: 100%;
+    table-layout: fixed;
+    .titulo{
+        @extend %letras;
+        font-weight: bold;
+        border-style: solid;
+        border-color: black;
+        a   {
+            color:$color;
+            font-size: 20px;
+            }
+        }
+    .titulo:hover
+    {
+    background-color: black;
+        a{
+        text-decoration: none;
+        text-emphasis: inherit;
+        }
+    }
+               
+}
+
+  .mr-3{
+        width: 30%;
+        height: auto;
+    }
+
+    .parrafo{
+        text-align: justify;
+    }
+    

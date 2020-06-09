@@ -1,0 +1,53 @@
+table .titulo, .row #texto {
+  background-color: #316692;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+
+@media print {
+  table {
+    display: none;
+  }
+}
+
+table {
+  text-align: center;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table .titulo {
+  font-weight: bold;
+  border-style: solid;
+  border-color: black;
+}
+
+table .titulo a {
+  color: white;
+  font-size: 20px;
+}
+
+table .titulo:hover {
+  background-color: black;
+}
+
+table .titulo:hover a {
+  text-decoration: none;
+  -webkit-text-emphasis: inherit;
+          text-emphasis: inherit;
+}
+
+.row div {
+  padding: 20px;
+  border: dotted black;
+}
+
+.row #texto {
+  text-align: justify;
+}
+
+#segundo {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+/*# sourceMappingURL=desing.css.map */

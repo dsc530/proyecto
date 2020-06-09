@@ -1,0 +1,67 @@
+.mapa, tr td .imagenlista {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table .titulo, h3, tr th {
+  background-color: #316692;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  padding: 10px;
+}
+
+@media print {
+  table {
+    display: none;
+  }
+}
+
+table {
+  text-align: center;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table .titulo {
+  font-weight: bold;
+  border-style: solid;
+  border-color: black;
+}
+
+table .titulo a {
+  color: white;
+  font-size: 20px;
+}
+
+table .titulo:hover {
+  background-color: black;
+}
+
+table .titulo:hover a {
+  text-decoration: none;
+  -webkit-text-emphasis: inherit;
+          text-emphasis: inherit;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+tr th {
+  border-style: solid;
+}
+
+tr td {
+  text-align: left;
+}
+
+tr td .imagenlista {
+  width: 30%;
+  height: auto;
+}
+/*# sourceMappingURL=franquicias_desing.css.map */

@@ -1,0 +1,24 @@
+.titulo{
+    background-color: rgb(49, 102, 146);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-style: solid;
+    border-color: black;
+    }
+.titulo:hover{
+    background-color: black;
+}
+.titulo a{
+    color: white;
+    font-size: 20px;
+}
+.titulo a:hover{
+    text-decoration: none;
+    text-emphasis: inherit;
+}
+table{
+    text-align: center;
+    width: 100%;
+    table-layout: fixed;
+               
+}  

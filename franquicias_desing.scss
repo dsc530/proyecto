@@ -1,0 +1,81 @@
+$fondo:rgb(49, 102, 146);
+$letra:'Courier New', Courier, monospace;
+$color:white;
+
+%imagenes{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+%letras{
+    background-color: $fondo;
+    font-family: $letra;
+    color: $color;
+    padding: 10px;
+    }
+
+    @media print{
+        table{
+            display: none;
+        }
+    }
+
+table{
+    text-align: center;
+    width: 100%;
+    table-layout: fixed;
+    .titulo{
+        @extend %letras;
+        font-weight: bold;
+        border-style: solid;
+        border-color: black;
+        a   {
+            color:$color;
+            font-size: 20px;
+            }
+        }
+    .titulo:hover
+    {
+    background-color: black;
+        a{
+        text-decoration: none;
+        text-emphasis: inherit;
+        }
+    }
+               
+}
+
+h1 {
+  text-align: center;  
+    }
+    
+h3  {
+    @extend %letras;
+    }
+
+p  {
+    text-align: justify;
+    }
+
+
+.mapa{
+        @extend %imagenes;    
+}
+
+tr{
+    th{
+        @extend %letras;
+        border-style: solid;
+    }
+
+    td{
+        text-align: left;
+
+        .imagenlista{
+            @extend %imagenes;
+            width: 30%;
+            height: auto;
+            }
+    }
+}
